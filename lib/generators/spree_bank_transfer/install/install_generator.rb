@@ -7,7 +7,7 @@ module SpreeBankTransfer
       end
 
       def add_stylesheets
-        inject_into_file 'app/assets/stylesheets/store/all.css', " *= require select2\n", :before => /\*\//, :verbose => true
+        inject_into_file 'app/assets/stylesheets/store/all.scss', " *= require select2\n", :before => /\*\//, :verbose => true
       end
 
       def add_migrations
